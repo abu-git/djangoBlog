@@ -4,12 +4,13 @@
 <div class='col-sm-8 offset-2'>
   <!--h1>The Blog Home!</h1-->
   {% for post in posts %}
-  <div class="card">
-    <h1 class='card-title'>{{ post.title }}</h1>
-    <p class='card-text'>By {{ post.author }} on {{ post.date_posted }}</p>
-    <p class ="card-text">{{ post.content }}</p>
-  </div>
-  <br>
+    <div class="card">
+      <h1 class='card-title'>{{ post.title }}</h1>
+      <p class='card-text'>By {{ post.author }} on {{ post.date_posted }}</p>
+      <p class='card-text'>"...{{ post.signature }}..."</p>
+      <p class ="card-text">{{ post.content }}</p>
+    </div>
+    <br>
   {% endfor %}
 </div>
 {% endblock content %}
