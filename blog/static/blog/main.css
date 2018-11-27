@@ -1,0 +1,11 @@
+body{
+	background-image: url('unsplash4.jpg');
+	background-repeat: repeat-x;
+}
+
+h1{
+	color: DarkOrange;
+}
+p{
+	color: Black;
+}
